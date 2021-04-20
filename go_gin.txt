@@ -1,0 +1,19 @@
+----------------------------------------- GIN (GO API) -------------------------------------
+Gin?
+Gin เป็น web framework ที่เขียนด้วยภาษา Go ซึ่งมี feature เหมือนกับ martini API แต่มีประสิทธิภาพมากกว่า มีความเร็วมากกว่าถึง 40 เท่า ด้วย httprouter ถ้าต้องการประสิทธิภาพและ productivity ที่ดีเยี่ยม คุณจะหลงรัก Gin
+
+Install
+ติดตั้ง GO https://golang.org/doc/install จากนั้นไปเพิ่มใน environment โดย path ไม่ต้องเข้าไปถึง bin เข้าไปถึงแค่ folder ก่อน bin
+
+ต้องติดตั้งอะไรเพิ่มเติม หาก go เป็น version ใหม่กว่า 1.11
+สร้าง project และเข้าไปใน project 
+go mod init <project name> เป็นชื่อ project ที่สร้าง
+go mod tidy
+go mod vendor
+
+ติดตั้ง Gin package ด้วยคำสั่ง go get ก็จะได้ Gin ใน GOPATH เป็นที่เรียบร้อย
+go get -u github.com/gin-gonic/gin
+ใช้งาน Gin ก็เพียง import github.com/gin-gonic/gin เข้ามาในไฟล์ .go
+import "github.com/gin-gonic/gin"
+
+
